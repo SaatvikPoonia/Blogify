@@ -18,7 +18,7 @@ const app = express();
 const PORT =  4000;
 
 mongoose
-  .connect(process.env.MONGO_URL)
+  .connect("mongodb+srv://saatvik:saatvik@cluster0.mqadazd.mongodb.net/")
   .then((e) => console.log("MongoDB Connected"));
 
 app.set("view engine", "ejs");
